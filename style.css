@@ -1,0 +1,130 @@
+body {
+	font-size: 16px;
+	padding: 0;
+	margin: 0;
+	background-color: #f4f4f4;
+}
+
+header {
+	background-color: yellow;
+	padding-top: 30px;
+	min-height: 70px;
+}
+
+/* Intro stage*/
+button {
+	background-color: yellow;
+	border: none;
+	font-size: 20px;
+	height: 35px;
+	width: 100px;
+	border: 1px;
+	border-color: black;
+	border-radius: 10px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+button:hover {
+	opacity: 0.5;
+	transition: 0.7s;
+}
+
+.nextbtn {
+	background-color: yellow;
+	border: none;
+	font-size: 20px;
+	height: 35px;
+	width: 150px;
+	border: 1px;
+	border-color: black;
+	border-radius: 10px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+button:hover {
+	opacity: 0.5;
+	transition: 0.7s;
+
+}
+/* stage 1*/
+#btnA {
+	background-color: yellow;
+	border: none;
+	font-size: 20px;
+	height: 35px;
+	width: 250px;
+	border: 1px;
+	border-color: black;
+	border-radius: 10px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+#btnA:hover {
+	opacity: 0.5;
+	transition: 0.7s;
+}
+
+#btnB {
+	background-color: yellow;
+	border: none;
+	font-size: 20px;
+	height: 35px;
+	width: 250px;
+	border: 1px;
+	border-color: black;
+	border-radius: 10px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+#btnB:hover {
+	opacity: 0.5;
+	transition: 0.7s;
+
+}
+
+#btnC {
+	background-color: yellow;
+	border: none;
+	font-size: 20px;
+	height: 35px;
+	width: 250px;
+	border: 1px;
+	border-color: black;
+	border-radius: 10px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+#btnC:hover {
+	opacity: 0.5;
+	transition: 0.7s;
+
+}
+
+#btnD {
+	background-color: yellow;
+	border: none;
+	font-size: 20px;
+	height: 35px;
+	width: 250px;
+	border: 1px;
+	border-color: black;
+	border-radius: 10px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+#btnD:hover {
+	opacity: 0.5;
+	transition: 0.7s;
+
+}
+/* stage 2*/
+
+/* stage 3*/
+
+/* final stage*/
