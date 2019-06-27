@@ -11,6 +11,21 @@
 	</header>
 	<h1>Stage 3:</h1>
 
-<script src="main.js"></script>
+<button id="ourBtn">press</button>
+<p id="hello">hello, there</p>
+<script>
+	document.getElementById('ourBtn').addEventListener('click', function(){
+	document.getElementById('hello').style.color = 'red';
+    });
+</script>
+
+<button id="myBtn">try</button>
+<p id="demo">hello again</p>
+
+<script>
+	document.getElementById('myBtn').addEventListener('click', function(){
+	document.getElementById('demo').style.fontSize = '50px';
+	});
+</script>
 </body>
 </html>

@@ -123,6 +123,25 @@ button:hover {
 	transition: 0.7s;
 
 }
+
+.stage2btn {
+	background-color: yellow;
+	border: none;
+	font-size: 20px;
+	height: 35px;
+	width: 150px;
+	border: 1px;
+	border-color: black;
+	border-radius: 10px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+#btnD:hover {
+	opacity: 0.5;
+	transition: 0.7s;
+
+}
 /* stage 2*/
 
 /* stage 3*/

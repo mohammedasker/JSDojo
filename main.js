@@ -4,7 +4,7 @@
 		document.getElementById('text').innerHTML = 'Welcome to the JS Dojo!';
 		document.getElementById('showBtn').style.display = 'block';
 	}
-// Master JavaScript introducing itself
+// Master introducing itself
 	function btn2() {
 		document.getElementById('text2').innerHTML = "My name is JavaScript and I'm here to teach you every skills I know to help you become the strongest Coding Warrior in the world!";
 		document.getElementById('showBtn2').style.display = 'block';
@@ -35,6 +35,15 @@
 // End of Intro Stage
 
 // STAGE 1
+/*if user clicks answer c
+show message correct answer and spawn next stage button
+else
+show message wrong answer and spawn retry button*/
+
+if (document.getElementById('btnD').onclick = function() {
+	document.getElementById('showRight').style.display = 'block';
+}) 
+
 
 // STAGE 2
 // STAGE 3
