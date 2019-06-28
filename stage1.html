@@ -21,20 +21,20 @@
 	<br><br>
 	By the way, what is the name of my master?</p>
 
-	<button id="btnA">Larry Wall</button>
-	<button id="btnB">Guido van Rossum</button>
-	<button id="btnC">James Gosling</button>
-	<button id="btnD">Brendan Eich</button>
+	<button id="btnA" onclick="answerA()">Larry Wall</button>
+	<button id="btnB" onclick="answerB()">Guido van Rossum</button>
+	<button id="btnC" onclick="answerC()">James Gosling</button>
+	<button id="btnD" onclick="answerD()">Brendan Eich</button>
 	<br><br>
 
     <div id="showRight" style="display: none;">
-	<p>Yes! The answer is correct! Master Eich means the world to me. Well then, see in the next stage!</p>
+	<p id="rightAns">Yes! The answer is correct! Master Eich means the world to me. Well then, see in the next stage!</p>
 	<a href="stage2.html"><button class="stage2btn">Go to Stage 2</button></a>
 	</div>
 
 	<div id="showWrong" style="display: none;">
 	<p>Pffft! You don't the answer, do you? Go back and try again!</p>
-	<button id="tryBtn2">Retry</button>
+	<button onclick="tryBtn2()">Retry</button>
 	</div>
 
 <script src="main.js"></script>

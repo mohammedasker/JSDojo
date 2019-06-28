@@ -1,7 +1,7 @@
 // INTRO STAGE
 //start conversation
 	function btn() {
-		document.getElementById('text').innerHTML = 'Welcome to the JS Dojo!';
+		document.getElementById('text').innerHTML = 'Welcome to the JS Dojo';
 		document.getElementById('showBtn').style.display = 'block';
 	}
 // Master introducing itself
@@ -15,13 +15,14 @@
 		document.getElementById('showBtn3').style.display = 'block';
 		document.getElementById('showBtn3').style.display = 'block';
 	}
-// Player selects Yes
+// Player selects Yes and disable No button
 	if (document.getElementById('btn4').onclick = function() {
 		document.getElementById('btn5').disabled = true;
 		document.getElementById('text4').innerHTML = "Good! Then, let's begin by going to the first stage.";
 		document.getElementById('showBtn4').style.display = 'block';
 	})
-// Player selects No
+// Player selects No and disable Yes button
+// Spawn next stage button
 	if (document.getElementById('btn5').onclick = function() {
 		document.getElementById('btn4').disabled = true;
 		document.getElementById('text5').innerHTML = "I see. When you're ready for the training, let me know."; 
@@ -35,15 +36,57 @@
 // End of Intro Stage
 
 // STAGE 1
-/*if user clicks answer c
-show message correct answer and spawn next stage button
-else
-show message wrong answer and spawn retry button*/
 
-if (document.getElementById('btnD').onclick = function() {
-	document.getElementById('showRight').style.display = 'block';
-}) 
+// Show message if player selected wrong answer
+// Disable other buttons if player selected answer
+	function answerA() {
+		document.getElementById('showWrong').style.display = 'block';
+		document.getElementById('btnA').style.background = 'red';
+		document.getElementById('btnA').style.color = 'white';
+		document.getElementById('btnB').disabled = true;
+		document.getElementById('btnC').disabled = true;
+		document.getElementById('btnD').disabled = true;
+	}
 
+// Show message if player selected wrong answer
+// Disable other buttons if player selected answer
+	function answerB() {
+		document.getElementById('showWrong').style.display = 'block';
+		document.getElementById('btnB').style.background = 'red';
+		document.getElementById('btnB').style.color = 'white';
+	    document.getElementById('btnA').disabled = true;
+		document.getElementById('btnC').disabled = true;
+		document.getElementById('btnD').disabled = true;
+	}
+
+// Show message if player selected wrong answer
+// Disable other buttons if player selected answer
+	function answerC() {
+		document.getElementById('showWrong').style.display = 'block';
+		document.getElementById('btnC').style.background = 'red';
+		document.getElementById('btnC').style.color = 'white';
+		document.getElementById('btnA').disabled = true;
+		document.getElementById('btnB').disabled = true;
+		document.getElementById('btnD').disabled = true;
+	}
+
+// Show message if player selected correct answer
+// Disable other buttons if player selected answer
+// Spawn next stage button when selected right answer
+	function answerD() {
+		document.getElementById('showRight').style.display = 'block';
+		document.getElementById('btnD').style.background = 'green';
+		document.getElementById('btnD').style.color = 'white';
+		document.getElementById('btnA').disabled = true;
+		document.getElementById('btnB').disabled = true;
+		document.getElementById('btnC').disabled = true;
+	}
+
+// Spawn Retry button when selected wrong answer
+	function tryBtn2(){
+		window.location.reload()
+	}
+// End of stage 1
 
 // STAGE 2
 // STAGE 3
