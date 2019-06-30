@@ -96,18 +96,30 @@
    }
 
 // Countdown the number when clicked the button
+   /*function beatDown() {
+   	var currentval = document.getElementById('beatDownButton').innerHTML;
+   	var newval = currentval - 0;
+   	if (currentval > 0) {
+   		newval = currentval - 1;
+   	}
+   	document.getElementById('beatDownButton').innerHTML = newval;	
+   }*/
    function beatDown() {
    	var currentval = document.getElementById('beatDownButton').innerHTML;
    	var newval = currentval - 0;
    	if (currentval > 0) {
    		newval = currentval - 1;
    	}
-   	document.getElementById('beatDownButton').innerHTML = newval;
+   	document.getElementById('beatDownButton').innerHTML = newval;	
    }
-// Spawn next stage button when countdown reached 0
-   if (currentval = 0) {
+   if (currentval && 0) {
    	document.getElementById('stageClear').style.display = 'block';
-    }
+   }
+   /*if (currentval = 0){
+   	document.getElementById('stageClear').style.display = 'block';
+   }*/
+// Spawn next stage button when countdown reached 0
+
 // End of stage 2
 
 // STAGE 3
