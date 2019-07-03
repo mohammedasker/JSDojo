@@ -11,17 +11,16 @@
 	</header>
 	<h1>Stage 3: Long and Random Facts of My Master</h1>
 
-	
-<p id="demo"></p>
-<button onclick="setTimeout(sayHi, 3000);">try</button>
-<script>
-	/*var countDownTime
-	var x = setInterval(count 1)
-	document.getElementById('demo').innerHTML = '';*/
-	function sayHi() {
-		alert("hi");
-	}
+<div id="myProgress">
+		<div id="myBar">100%</div>
+	</div>
 
+	<button onclick="move()" id="move">click</button>
+	<p id="newText"></p>
 
+	<div id="failed" style="display: none;">
+		<button onclick="tryBtn3()">Retry</button>
+	</div>
+	<script src="main.js"></script>
 </body>
 </html>

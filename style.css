@@ -152,6 +152,19 @@ button:hover {
 }
 
 /* stage 3*/
+#myProgress {
+	width: 100%;
+	background-color: grey;
+}
+
+#myBar {
+	width: 100%;
+	height: 30px;
+	background-color: #4CAF50;
+	text-align: center;
+	color: white;
+}
+
 .stage4btn {
 	width: 150px;
 }

@@ -111,4 +111,38 @@
 // End of stage 2
 
 // STAGE 3
+// Create progress bar and move the bar when clicked the button
+function move() {
+	var elem = document.getElementById("myBar");
+	var width = 1;
+	var id = setInterval(frame, 90);
+	// Stop the progress bar from moving when it is 100%
+	// Spawn Retry button when the progress bar is 100%
+	function frame() {
+		if (width >= 100) {
+			clearInterval(id);
+			document.getElementById('failed').style.display = 'block';
+		} else {
+			width++;
+			elem.style.width = width + '%';
+			elem.innerHTML = width * 1 + '%';
+		}
+	// Change the progress bar into orange when it reached 50%
+		if (width >= 50) {
+			document.getElementById("newText").innerHTML = ' Enemy inflicted half damage';
+			document.getElementById('myBar').style.backgroundColor = 'orange';
+			console.log('half damage');
+		}
+	// Change the progress bar into red when it reached 85%
+		if (width >= 85) {
+			document.getElementById("newText").innerHTML = 'Enemy inflicted critical damage';
+			document.getElementById('myBar').style.backgroundColor = 'red';
+			console.log('critical damage');
+		}
+	}
+}
+    // Refresh the page when clicked Retry button
+	function tryBtn3() {
+		window.location.reload()
+}
 // FINAL STAGE
