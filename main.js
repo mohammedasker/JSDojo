@@ -112,12 +112,12 @@
 
 // STAGE 3
 // Create progress bar and move the bar when clicked the button
-function move() {
+	function move() {
 	var elem = document.getElementById("myBar");
 	var width = 1;
 	var id = setInterval(frame, 90);
-	// Stop the progress bar from moving when it is 100%
-	// Spawn Retry button when the progress bar is 100%
+// Stop the progress bar from moving when it is 100%
+// Spawn Retry button when the progress bar is 100%
 	function frame() {
 		if (width >= 100) {
 			clearInterval(id);
@@ -125,24 +125,31 @@ function move() {
 		} else {
 			width++;
 			elem.style.width = width + '%';
-			elem.innerHTML = width * 1 + '%';
+			//elem.innerHTML = width * 1 + '%';
 		}
-	// Change the progress bar into orange when it reached 50%
+// Change the progress bar into green when it's less than 50%
+		if (width >= 0) {
+			document.getElementById('myProgress').style.backgroundColor = '#4CAF50';
+			document.getElementById("newText").innerHTML = 'Find the antibotic';
+		}
+// Change the progress bar into orange when it reached 50%
 		if (width >= 50) {
-			document.getElementById("newText").innerHTML = ' Enemy inflicted half damage';
-			document.getElementById('myBar').style.backgroundColor = 'orange';
+			document.getElementById("newText").innerHTML = 'Oh,no! Master is getting worse!';
+			document.getElementById('myProgress').style.backgroundColor = 'orange';
 			console.log('half damage');
 		}
-	// Change the progress bar into red when it reached 85%
+// Change the progress bar into red when it reached 85%
 		if (width >= 85) {
-			document.getElementById("newText").innerHTML = 'Enemy inflicted critical damage';
-			document.getElementById('myBar').style.backgroundColor = 'red';
+			document.getElementById("newText").innerHTML = 'Master is about to die! Hurry!';
+			document.getElementById('myProgress').style.backgroundColor = 'red';
 			console.log('critical damage');
 		}
 	}
 }
-    // Refresh the page when clicked Retry button
+// Refresh the page when clicked Retry button
 	function tryBtn3() {
 		window.location.reload()
 }
+// End of Stage 3
+
 // FINAL STAGE
