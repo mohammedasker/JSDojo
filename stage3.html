@@ -13,9 +13,9 @@
 
 	<p>Oh, thank goodness you're there!
 		<br><br>
-	I got bitten by snake and I'm going to die if I didn't take antibotic soon. I'm sure I left it somewhere in this room, but I don't know where exactly.
+	I got bitten by snake and I'm going to die if I didn't take antibotic potion soon. I'm sure I left it somewhere in this room, but I don't know where exactly.
 		<br><br>
-	Please, find it quickly! <strong>*Coughing*</strong></p>
+	Please, find it quickly!</p>
 
 	<div id="myProgress">
 		<div id="myBar"></div>
@@ -25,10 +25,22 @@
 	<p id="newText"></p>
 
 	<div id="failed" style="display: none;">
-		<h1>Mission Failed</h1>
-		<p> All you have to do isfind that damn antibotic, apprentice!</p>
+		<h1>Mission Failed!</h1>
+		<p> All you have to do is find that damn potion, apprentice!</p>
 		<button onclick="tryBtn3()">Retry</button>
 	</div>
+
+	<button id="drug" onclick="theDrug()" style="display: none;">Potion</button>
+
+	<div id="passed" style="display: none;">
+		<h1>Mission Passed!</h1>
+		<p>The potion! You found it! Now I can cure the poison. Thank you so much!
+			<br><br>
+		   We are about to enter the final stage of the training. I'll meet you there.
+		</p>
+		<a href="stage4.html"><button class="stage4btn">Go to Final Stage</button></a>
+	</div>
+
 	<script src="main.js"></script>
 </body>
 </html>

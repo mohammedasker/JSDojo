@@ -116,28 +116,43 @@
 	var elem = document.getElementById("myBar");
 	var width = 1;
 	var id = setInterval(frame, 90);
+
+
+
 // Stop the progress bar from moving when it is 100%
 // Spawn Retry button when the progress bar is 100%
 	function frame() {
 		if (width >= 100) {
 			clearInterval(id);
 			document.getElementById('failed').style.display = 'block';
+			document.getElementById('drug').disabled = true;
 		} else {
 			width++;
 			elem.style.width = width + '%';
 			//elem.innerHTML = width * 1 + '%';
 		}
+
+// Disable start button when user clicks it
+   if (document.getElementById('move').onclick = function(){
+   	document.getElementById('move').disabled = true;
+   	console.log('start button disabled');
+   })
+
+
 // Change the progress bar into green when it's less than 50%
 		if (width >= 0) {
 			document.getElementById('myProgress').style.backgroundColor = '#4CAF50';
-			document.getElementById("newText").innerHTML = 'Find the antibotic';
+			document.getElementById("newText").innerHTML = 'Find the antibotic potion';
+			document.getElementById('drug').style.display = 'block';
 		}
+
 // Change the progress bar into orange when it reached 50%
 		if (width >= 50) {
 			document.getElementById("newText").innerHTML = 'Oh,no! Master is getting worse!';
 			document.getElementById('myProgress').style.backgroundColor = 'orange';
 			console.log('half damage');
 		}
+
 // Change the progress bar into red when it reached 85%
 		if (width >= 85) {
 			document.getElementById("newText").innerHTML = 'Master is about to die! Hurry!';
@@ -150,6 +165,19 @@
 	function tryBtn3() {
 		window.location.reload()
 }
+
+
+// Stop the progress bar transition when user clicked the drug button
+function theDrug() {
+	document.getElementById('passed').style.display = 'block';
+	document.getElementById('failed').style.display = 'none';
+	document.getElementById('myProgress').style.display = 'none';
+	document.getElementById('myBar').style.display = 'none';
+	document.getElementById('move').style.display = 'none';
+}
+
+// Spawn next stage button when user clicks drug button
+
 // End of Stage 3
 
 // FINAL STAGE

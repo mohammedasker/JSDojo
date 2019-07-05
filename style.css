@@ -25,11 +25,6 @@ button {
 	cursor: pointer;
 }
 
-button:hover {
-	opacity: 0.5;
-	transition: 0.7s;
-}
-
 .nextbtn {
 	background-color: yellow;
 	border: none;
@@ -43,11 +38,6 @@ button:hover {
 	cursor: pointer;
 }
 
-button:hover {
-	opacity: 0.5;
-	transition: 0.7s;
-
-}
 /* stage 1*/
 #btnA {
 	background-color: yellow;
@@ -62,10 +52,6 @@ button:hover {
 	cursor: pointer;
 }
 
-#btnA:hover {
-	opacity: 0.5;
-	transition: 0.7s;
-}
 
 #btnB {
 	background-color: yellow;
@@ -78,12 +64,6 @@ button:hover {
 	border-radius: 10px;
 	margin-top: 20px;
 	cursor: pointer;
-}
-
-#btnB:hover {
-	opacity: 0.5;
-	transition: 0.7s;
-
 }
 
 #btnC {
@@ -99,12 +79,6 @@ button:hover {
 	cursor: pointer;
 }
 
-#btnC:hover {
-	opacity: 0.5;
-	transition: 0.7s;
-
-}
-
 #btnD {
 	background-color: yellow;
 	border: none;
@@ -116,12 +90,6 @@ button:hover {
 	border-radius: 10px;
 	margin-top: 20px;
 	cursor: pointer;
-}
-
-#btnD:hover {
-	opacity: 0.5;
-	transition: 0.7s;
-
 }
 
 .stage2btn {
@@ -137,11 +105,6 @@ button:hover {
 	cursor: pointer;
 }
 
-#btnD:hover {
-	opacity: 0.5;
-	transition: 0.7s;
-
-}
 /* stage 2*/
 .battlestart {
 	width: 150px;
@@ -168,7 +131,8 @@ button:hover {
 }
 
 .stage4btn {
-	width: 150px;
+	width: 180px;
+	margin-bottom: 20px;
 }
 
 /* final stage*/
