@@ -159,6 +159,8 @@
 			document.getElementById('myProgress').style.backgroundColor = 'red';
 			console.log('critical damage');
 		}
+		/*if (document.getElementById('drug').onclick = function(){ STOP TRANSITION
+		})*/
 	}
 }
 // Refresh the page when clicked Retry button
@@ -169,8 +171,8 @@
 
 // Stop the progress bar transition when user clicked the drug button
 function theDrug() {
-	document.getElementById('passed').style.display = 'block';
 	document.getElementById('failed').style.display = 'none';
+	document.getElementById('passed').style.display = 'block';
 	document.getElementById('myProgress').style.display = 'none';
 	document.getElementById('myBar').style.display = 'none';
 	document.getElementById('move').style.display = 'none';
