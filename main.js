@@ -117,8 +117,6 @@
 	var width = 1;
 	var id = setInterval(frame, 90);
 
-
-
 // Stop the progress bar from moving when it is 100%
 // Spawn Retry button when the progress bar is 100%
 	function frame() {
@@ -129,7 +127,6 @@
 		} else {
 			width++;
 			elem.style.width = width + '%';
-			//elem.innerHTML = width * 1 + '%';
 		}
 
 // Disable start button when user clicks it
@@ -144,6 +141,7 @@
 			document.getElementById('myProgress').style.backgroundColor = '#4CAF50';
 			document.getElementById("newText").innerHTML = 'Find the antibotic potion';
 			document.getElementById('drug').style.display = 'block';
+			console.log('game start');
 		}
 
 // Change the progress bar into orange when it reached 50%
@@ -159,15 +157,12 @@
 			document.getElementById('myProgress').style.backgroundColor = 'red';
 			console.log('critical damage');
 		}
-		/*if (document.getElementById('drug').onclick = function(){ STOP TRANSITION
-		})*/
 	}
 }
 // Refresh the page when clicked Retry button
 	function tryBtn3() {
 		window.location.reload()
 }
-
 
 // Stop the progress bar transition when user clicked the drug button
 function theDrug() {
@@ -176,6 +171,7 @@ function theDrug() {
 	document.getElementById('myProgress').style.display = 'none';
 	document.getElementById('myBar').style.display = 'none';
 	document.getElementById('move').style.display = 'none';
+	console.log('found potion');
 }
 
 // Spawn next stage button when user clicks drug button
