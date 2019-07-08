@@ -15,11 +15,14 @@
 		<br><br>
 	You got only one minute to defeat and if you failed, you must start from the beginning of the training. But don't worry, since I'm the one who train you, I'm sure you will pass the test. Are you ready?</p>
 
-	<button>Start</button>
+	<button onclick="playGame()">Start</button>
+	
+	<div id="gamestart" style="display: none;">
 	<button onclick="foundYou()" id="found">Found You!</button>
+	</div>
 
 	<div id="gamewin" style="display: none;">
-	<p>Y-You defeat me! I have nothing to teach you anymore. Congrats, my apprentice. You are now a coding warrior. Go to the treasure room and claim your reward.</p>
+	<p>Y-You defeat me! You've learn so much in a short time. I have nothing to teach you anymore. Congrats on passing the test, my apprentice! You are now officially a coding warrior! Go to the treasure room and claim your reward!!</p>
 	<a href="reward.html"><button class="rewardbtn">Treasure Room</button></a>
 	</div>
 

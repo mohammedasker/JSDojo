@@ -183,6 +183,9 @@ function theDrug() {
 
 // FINAL STAGE
 // Start the countdown when user clicks start button
+function playGame() {
+	document.getElementById('gamestart').style.display = 'block';
+}
 // Create the countdown
 
 // Stop the countdown when user beat  master
