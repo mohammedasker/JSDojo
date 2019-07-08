@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>JS Dojo</title>
+	<title>JS Dojo - Final Stage: Dark World</title>
 </head>
 <body>
 	<header>
@@ -11,7 +11,17 @@
 	</header>
 	<h1>Final Stage: Dark World</h1>
 
-	
+	<p>Welcome to final stage of the training. Your final lesson is to use all the skills I've taught you to fight the greatest opponent of all time - me. The game is simple. It's hide and seek!
+		<br><br>
+	You got only one minute to defeat and if you failed, you must start from the beginning of the training. But don't worry, since I'm the one who train you, I'm sure you will pass the test. Are you ready?</p>
+
+	<button>Start</button>
+	<button onclick="foundYou()" id="found">Found You!</button>
+
+	<div id="gamewin" style="display: none;">
+	<p>Y-You defeat me! I have nothing to teach you anymore. Congrats, my apprentice. You are now a coding warrior. Go to the treasure room and claim your reward.</p>
+	<a href="reward.html"><button class="rewardbtn">Treasure Room</button></a>
+	</div>
 
 <script src="main.js"></script>
 </body>

@@ -136,3 +136,10 @@ button {
 }
 
 /* final stage*/
+.rewardbtn {
+	width: 180px;
+}
+
+#found {
+	width: 150px;
+}

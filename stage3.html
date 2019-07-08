@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>JS Dojo</title>
+	<title>JS Dojo - Stage 3: Save Master JavaScript</title>
 </head>
 <body>
 	<header>
@@ -25,9 +25,9 @@
 	<p id="newText"></p>
 
 	<div id="failed" style="display: none;">
-		<h1>Mission Failed!</h1>
-		<p> All you have to do is find that damn potion, apprentice!</p>
-		<button onclick="tryBtn3()">Retry</button>
+		<h1 id="gamefail">Mission Failed!</h1>
+		<p id="textfail"> All you have to do is find that damn potion, apprentice!</p>
+		<button onclick="tryBtn3()" id="btnfail">Retry</button>
 	</div>
 
 	<button id="drug" onclick="theDrug()" style="display: none;">Potion</button>

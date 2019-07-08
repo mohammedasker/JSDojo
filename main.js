@@ -164,18 +164,32 @@
 		window.location.reload()
 }
 
-// Stop the progress bar transition when user clicked the drug button
+// Hide the progress bar transition when user clicked the drug button
+// Spawn next stage button when user clicks drug button
+// Show mission passed message when user clicks drug button
 function theDrug() {
-	document.getElementById('failed').style.display = 'none';
 	document.getElementById('passed').style.display = 'block';
 	document.getElementById('myProgress').style.display = 'none';
 	document.getElementById('myBar').style.display = 'none';
 	document.getElementById('move').style.display = 'none';
+	document.getElementById('newText').style.display = 'none';
+	document.getElementById('gamefail').style.display = 'none';
+	document.getElementById('textfail').style.display = 'none';
+	document.getElementById('btnfail').style.display = 'none';
 	console.log('found potion');
 }
-
-// Spawn next stage button when user clicks drug button
 
 // End of Stage 3
 
 // FINAL STAGE
+// Start the countdown when user clicks start button
+// Create the countdown
+
+// Stop the countdown when user beat  master
+// Show message and the reward room button when user click found you button
+ function foundYou() {
+ 	document.getElementById('gamewin').style.display = 'block';
+ }
+
+
+// End of Final Stage
