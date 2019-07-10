@@ -1,14 +1,30 @@
 body {
-	font-size: 16px;
+	font-size: 18px;
 	padding: 0;
 	margin: 0;
 	background-color: #f4f4f4;
 }
-
+/* Header*/
 header {
 	background-color: yellow;
 	padding-top: 30px;
 	min-height: 70px;
+}
+
+nav a {
+	text-decoration: none;
+	text-transform: none;
+	color: black;
+}
+
+/* Menu */
+
+
+/* Global */
+.container{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
 }
 
 /* Intro stage*/
@@ -23,6 +39,7 @@ button {
 	border-radius: 10px;
 	margin-top: 20px;
 	cursor: pointer;
+	margin-bottom: 30px;
 }
 
 .nextbtn {
@@ -36,6 +53,7 @@ button {
 	border-radius: 10px;
 	margin-top: 20px;
 	cursor: pointer;
+	margin-bottom: 30px;
 }
 
 /* stage 1*/
@@ -44,7 +62,7 @@ button {
 	border: none;
 	font-size: 20px;
 	height: 35px;
-	width: 250px;
+	width: 220px;
 	border: 1px;
 	border-color: black;
 	border-radius: 10px;
@@ -58,7 +76,7 @@ button {
 	border: none;
 	font-size: 20px;
 	height: 35px;
-	width: 250px;
+	width: 220px;
 	border: 1px;
 	border-color: black;
 	border-radius: 10px;
@@ -71,7 +89,7 @@ button {
 	border: none;
 	font-size: 20px;
 	height: 35px;
-	width: 250px;
+	width: 220px;
 	border: 1px;
 	border-color: black;
 	border-radius: 10px;
@@ -84,7 +102,7 @@ button {
 	border: none;
 	font-size: 20px;
 	height: 35px;
-	width: 250px;
+	width: 220px;
 	border: 1px;
 	border-color: black;
 	border-radius: 10px;
@@ -142,4 +160,23 @@ button {
 
 #found {
 	width: 150px;
+}
+
+/* Treasure room*/
+li {
+	margin-bottom: 15px;
+}
+
+a {
+	font-size: 18px;
+}
+
+/* Mobile responsive*/
+@media (max-width: 768px){
+	p {
+		font-size: 22px;
+	}
+	a {
+	font-size: 22px;
+}
 }

@@ -187,12 +187,15 @@ function playGame() {
 	document.getElementById('gamestart').style.display = 'block';
 }
 // Create the countdown
-
-// Stop the countdown when user beat  master
+	var seconds = document.getElementById("countdown").textContent;
+	var countdown = setInterval(function(){
+	    seconds--;
+	    document.getElementById("countdown").textContent = seconds;
+	    if (seconds <= 0) clearInterval(countdown);
+	},1000);
+// Stop the countdown when user beat the master
 // Show message and the reward room button when user click found you button
  function foundYou() {
  	document.getElementById('gamewin').style.display = 'block';
  }
-
-
 // End of Final Stage

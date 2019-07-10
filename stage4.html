@@ -2,22 +2,32 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<meta name="HandheldFriendly" content="true">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>JS Dojo - Final Stage: Dark World</title>
 </head>
 <body>
 	<header>
-		<h1>JS Dojo</h1>
+		<nav>
+		<a href="index.html"><h1>JS Dojo</h1></a>
+		</nav>
 	</header>
+
+	<div class="container">
 	<h1>Final Stage: Dark World</h1>
 
 	<p>Welcome to final stage of the training. Your final lesson is to use all the skills I've taught you to fight the greatest opponent of all time - me. The game is simple. It's hide and seek!
 		<br><br>
-	You got only one minute to defeat and if you failed, you must start from the beginning of the training. But don't worry, since I'm the one who train you, I'm sure you will pass the test. Are you ready?</p>
+	You got only one minute to defeat me and if you failed, you must start from the beginning of the training. But don't worry, since I'm the one who train you, I'm sure you will pass the test. Are you ready?</p>
 
 	<button onclick="playGame()">Start</button>
+	<span id="countdown">3</span>
 	
+
 	<div id="gamestart" style="display: none;">
+
 	<button onclick="foundYou()" id="found">Found You!</button>
 	</div>
 
@@ -25,6 +35,10 @@
 	<p>Y-You defeat me! You've learn so much in a short time. I have nothing to teach you anymore. Congrats on passing the test, my apprentice! You are now officially a coding warrior! Go to the treasure room and claim your reward!!</p>
 	<a href="reward.html"><button class="rewardbtn">Treasure Room</button></a>
 	</div>
+	</div>
+
+
+	<h1 id="timeout"></h1>
 
 <script src="main.js"></script>
 </body>

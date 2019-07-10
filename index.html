@@ -2,15 +2,21 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<meta name="HandheldFriendly" content="true">
 	<link rel="stylesheet" type="text/css" href="style.css">
     <title>JS Dojo - Home</title>
 </head>
 <body>
 	<header>
-		<h1>JS Dojo</h1>
+		<nav>
+		<a href="index.html"><h1>JS Dojo</h1></a>
+		</nav>
 	</header>
 
-<button onclick="btn()">start</button>
+<div class="container">
+<button onclick="btn()">Start</button>
 <p id="text"></p>
 <!-- end of start-->
 
@@ -21,7 +27,7 @@
 <!-- end of intro-->
 
 <div id="showBtn2" style="display: none;">
-<button onclick="btn3()">cont.</button>
+<button onclick="btn3()">Continue</button>
 <p id="text3"></p>
 </div>
 <!-- end of cont.-->
@@ -41,6 +47,7 @@
 <div id="showBtn5" style="display: none;">
 <p id="text5"></p>
 <button onclick="tryBtn()">Retry</button>
+</div>
 </div>
 
 <script src="main.js"></script>
