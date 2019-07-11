@@ -183,19 +183,32 @@ function theDrug() {
 
 // FINAL STAGE
 // Start the countdown when user clicks start button
+// Create the time countdown
 function playGame() {
 	document.getElementById('gamestart').style.display = 'block';
-}
-// Create the countdown
 	var seconds = document.getElementById("countdown").textContent;
 	var countdown = setInterval(function(){
 	    seconds--;
 	    document.getElementById("countdown").textContent = seconds;
-	    if (seconds <= 0) clearInterval(countdown);
+	    if (seconds <= 0) {
+	    clearInterval(countdown);
+	    console.log('number is counting');
+	    }
 	},1000);
+		if (seconds <= 0) {
+		document.getElementById('gameover').style.display = 'block';
+		document.getElementById('countdown').style.display = 'none';
+		document.getElementById('found').disabled = true;
+		console.log('Game failed');
+		}
+}
 // Stop the countdown when user beat the master
 // Show message and the reward room button when user click found you button
  function foundYou() {
  	document.getElementById('gamewin').style.display = 'block';
+ 	document.getElementById('gamestart').style.display = 'none';
+ 	document.getElementById('countdown').style.display = 'none';
+ 	document.getElementById('startbtn').style.display = 'none';
  }
+
 // End of Final Stage

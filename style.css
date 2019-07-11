@@ -154,11 +154,18 @@ button {
 }
 
 /* final stage*/
+#countdown {
+	font-size: 20px;
+}
 .rewardbtn {
 	width: 180px;
 }
 
 #found {
+	width: 150px;
+}
+
+.restartbtn {
 	width: 150px;
 }
 
