@@ -7,8 +7,7 @@ body {
 /* Header*/
 header {
 	background-color: yellow;
-	padding-top: 30px;
-	min-height: 70px;
+	
 }
 
 nav a {
@@ -17,8 +16,22 @@ nav a {
 	color: black;
 }
 
-/* Menu */
+nav a h1 {
+	color: black;
+}
 
+nav ul {
+	text-decoration: none;
+	text-transform: none;
+	list-style: none;
+	float: right;
+}
+
+nav li {
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
 
 /* Global */
 .container{
@@ -165,7 +178,7 @@ button {
 	width: 150px;
 }
 
-.restartbtn {
+#restartbtn {
 	width: 150px;
 }
 

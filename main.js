@@ -183,7 +183,7 @@ function theDrug() {
 
 // FINAL STAGE
 // Start the countdown when user clicks start button
-// Create the time countdown
+// Create the countdown timer
 function playGame() {
 	document.getElementById('gamestart').style.display = 'block';
 	var seconds = document.getElementById("countdown").textContent;
@@ -193,19 +193,20 @@ function playGame() {
 	    if (seconds <= 0) {
 	    clearInterval(countdown);
 	    console.log('number is counting');
-	    }
-	},1000);
-		if (seconds <= 0) {
-		document.getElementById('gameover').style.display = 'block';
+	    document.getElementById('gameover').style.display = 'block';
 		document.getElementById('countdown').style.display = 'none';
-		document.getElementById('found').disabled = true;
-		console.log('Game failed');
-		}
+		document.getElementById('startbtn').style.display = 'none';
+		document.getElementById('found').style.display = 'none';
+		console.log('Game failed');}
+	},1000);
 }
-// Stop the countdown when user beat the master
+// Hide the countdown timer when user beat the master
 // Show message and the reward room button when user click found you button
  function foundYou() {
  	document.getElementById('gamewin').style.display = 'block';
+ 	document.getElementById('youlose').style.display = 'none';
+ 	document.getElementById('losetext').style.display = 'none';
+ 	document.getElementById('restartbtn').style.display = 'none';
  	document.getElementById('gamestart').style.display = 'none';
  	document.getElementById('countdown').style.display = 'none';
  	document.getElementById('startbtn').style.display = 'none';
