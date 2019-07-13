@@ -7,7 +7,11 @@ body {
 /* Header*/
 header {
 	background-color: yellow;
-	
+	margin: 0px;
+}
+
+header nav {
+	margin: 10px;
 }
 
 nav a {
@@ -18,6 +22,7 @@ nav a {
 
 nav a h1 {
 	color: black;
+	float: left;
 }
 
 nav ul {
@@ -25,11 +30,13 @@ nav ul {
 	text-transform: none;
 	list-style: none;
 	float: right;
+	padding-top: 12px;
 }
 
 nav li {
 	float: left;
 	display: inline;
+	padding-top: 50px;
 	padding: 0 20px 0 20px;
 }
 
@@ -53,7 +60,10 @@ button {
 	margin-top: 20px;
 	cursor: pointer;
 	margin-bottom: 30px;
-}
+	margin: auto;
+	display: block;
+	margin-top: 50px;
+	}
 
 .nextbtn {
 	background-color: yellow;
@@ -66,7 +76,13 @@ button {
 	border-radius: 10px;
 	margin-top: 20px;
 	cursor: pointer;
-	margin-bottom: 30px;
+	margin-bottom: 40px;
+	text-transform: none;
+	text-decoration: none;
+}
+
+.trybtn {
+ margin-bottom: 40px;
 }
 
 /* stage 1*/
@@ -82,7 +98,6 @@ button {
 	margin-top: 20px;
 	cursor: pointer;
 }
-
 
 #btnB {
 	background-color: yellow;
@@ -146,6 +161,10 @@ button {
 }
 
 /* stage 3*/
+#move{
+	margin-top: 80px;
+}
+
 #myProgress {
 	width: 100%;
 	background-color: #4CAF50;
@@ -189,6 +208,7 @@ li {
 
 a {
 	font-size: 18px;
+	text-decoration: none;
 }
 
 /* Mobile responsive*/
