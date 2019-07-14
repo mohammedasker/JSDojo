@@ -198,6 +198,9 @@ function playGame() {
 		document.getElementById('startbtn').style.display = 'none';
 		document.getElementById('found').style.display = 'none';
 		console.log('Game failed');}
+		if (seconds <= 10) {
+		document.getElementById('countdown').style.color = 'red';
+		}
 	},1000);
 }
 // Hide the countdown timer when user beat the master

@@ -109,7 +109,7 @@ button {
 	border-color: black;
 	border-radius: 10px;
 	margin-top: 20px;
-	cursor: pointer;
+	cursor: pointer; 
 }
 
 #btnC {
@@ -149,6 +149,16 @@ button {
 	border-radius: 10px;
 	margin-top: 20px;
 	cursor: pointer;
+	margin-bottom: 40px;
+}
+
+.trybtn2 {
+	margin-bottom: 40px;
+}
+
+.ansbtn {
+	display: grid;
+	grid-template-columns: 55% 55%;
 }
 
 /* stage 2*/
@@ -158,6 +168,7 @@ button {
 
 .stage3btn {
 	width: 150px;
+	margin-bottom: 40px;
 }
 
 /* stage 3*/
@@ -182,23 +193,41 @@ button {
 
 .stage4btn {
 	width: 180px;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
+}
+
+.btnfail {
+	margin-bottom: 40px;
+}
+
+#drug {
+	margin-bottom: 40px;
 }
 
 /* final stage*/
 #countdown {
-	font-size: 20px;
+	font-size: 40px;
+	font-weight: bold;
 }
+
 .rewardbtn {
 	width: 180px;
+	margin-bottom: 40px;
 }
 
 #found {
 	width: 150px;
+	margin-bottom: 40px;
 }
 
 #restartbtn {
 	width: 150px;
+	margin-bottom: 40px;
+}
+
+h2 {
+	text-align: center;
+	font-size: 40px;
 }
 
 /* Treasure room*/
@@ -214,9 +243,14 @@ a {
 /* Mobile responsive*/
 @media (max-width: 768px){
 	p {
-		font-size: 22px;
+		font-size: 20px;
 	}
 	a {
-	font-size: 22px;
+	font-size: 20px;
+
+}
+.ansbtn {
+	display: grid;
+	grid-template-columns: 50% 50%;
 }
 }
