@@ -104,6 +104,8 @@
    	document.getElementById('beatDownButton').innerHTML = newval;
    	// Spawn next stage button when countdown reached 0
    	if (currentval == 0) {
+   	document.getElementById('showBoss').style.display = 'none';
+   	document.getElementById('battlestart').style.display = 'none';
    	document.getElementById('stageClear').style.display = 'block';
    }
    }
@@ -113,6 +115,7 @@
 // STAGE 3
 // Create progress bar and move the bar when clicked the button
 	function move() {
+	document.getElementById('startbtn').style.display = 'block';
 	var elem = document.getElementById("myBar");
 	var width = 1;
 	var id = setInterval(frame, 90);
@@ -176,6 +179,7 @@ function theDrug() {
 	document.getElementById('gamefail').style.display = 'none';
 	document.getElementById('textfail').style.display = 'none';
 	document.getElementById('btnfail').style.display = 'none';
+	document.getElementById('startbtn').style.display = 'none';
 	console.log('found potion');
 }
 

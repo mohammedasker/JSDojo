@@ -47,7 +47,27 @@ nav li {
 	overflow: hidden;
 }
 
+
+
 /* Intro stage*/
+#text {
+	text-align: center;
+}
+#showBtn {
+	text-align: center;
+}
+#showBtn2 {
+	text-align: center;
+}
+#showBtn3 {
+	text-align: center;
+}
+#showBtn4 {
+	text-align: center;
+}
+#showBtn5 {
+	text-align: center;
+}
 button {
 	background-color: yellow;
 	border: none;
@@ -83,6 +103,12 @@ button {
 
 .trybtn {
  margin-bottom: 40px;
+}
+
+.choice {
+	display: grid;
+	grid-template-columns: 60% 15%;
+	margin-bottom: 40px;
 }
 
 /* stage 1*/
@@ -158,12 +184,16 @@ button {
 
 .ansbtn {
 	display: grid;
-	grid-template-columns: 55% 55%;
+	grid-template-columns: 60% 15%;
 }
 
 /* stage 2*/
-.battlestart {
+#battlestart {
 	width: 150px;
+}
+
+#showBoss {
+	text-align: center;
 }
 
 .stage3btn {
@@ -218,6 +248,7 @@ button {
 #found {
 	width: 150px;
 	margin-bottom: 40px;
+	opacity: 0.1;
 }
 
 #restartbtn {
