@@ -170,19 +170,23 @@
 // Hide the progress bar transition when user clicked the drug button
 // Spawn next stage button when user clicks drug button
 // Show mission passed message when user clicks drug button
+
 function theDrug() {
 	document.getElementById('passed').style.display = 'block';
-	document.getElementById('myProgress').style.display = 'none';
-	document.getElementById('myBar').style.display = 'none';
-	document.getElementById('move').style.display = 'none';
-	document.getElementById('newText').style.display = 'none';
-	document.getElementById('gamefail').style.display = 'none';
-	document.getElementById('textfail').style.display = 'none';
-	document.getElementById('btnfail').style.display = 'none';
-	document.getElementById('startbtn').style.display = 'none';
+	[
+	'myProgress',
+	'myBar',
+	'move',
+	'newText',
+	'gamefail',
+	'textfail',
+	'btnfail',
+	'startbtn'
+	].forEach(function(elementId){
+		document.getElementById(elementId).style.display = 'none';
+	})
 	console.log('found potion');
 }
-
 // End of Stage 3
 
 // FINAL STAGE
@@ -211,12 +215,16 @@ function playGame() {
 // Show message and the reward room button when user click found you button
  function foundYou() {
  	document.getElementById('gamewin').style.display = 'block';
- 	document.getElementById('youlose').style.display = 'none';
- 	document.getElementById('losetext').style.display = 'none';
- 	document.getElementById('restartbtn').style.display = 'none';
- 	document.getElementById('gamestart').style.display = 'none';
- 	document.getElementById('countdown').style.display = 'none';
- 	document.getElementById('startbtn').style.display = 'none';
+ 	[
+ 	'youlose',
+ 	'losetext',
+ 	'restartbtn',
+ 	'gamestart',
+ 	'countdown',
+ 	'startbtn'
+ 	].forEach(function(elementId){
+ 		document.getElementById(elementId).style.display = 'none';
+ 	})
  }
 
 // End of Final Stage
