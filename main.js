@@ -1,3 +1,10 @@
+const fullNames = names.map(function(name){
+  return `${name} Bos`;
+});
+
+console.log(fullNames); // Wes Bos, Kait Bos, Lux Bos
+
+
 // INTRO STAGE
 //start conversation
 	function btn() {
@@ -96,8 +103,8 @@
    }
 
    function beatDown() {
-   	var currentval = document.getElementById('beatDownButton').innerHTML;
-   	var newval = currentval - 0;
+   	let currentval = document.getElementById('beatDownButton').innerHTML;
+   	let newval = currentval - 0;
    	if (currentval > 0) {
    		newval = currentval - 1;
    	}
@@ -116,9 +123,9 @@
 // Create progress bar and move the bar when clicked the button
 	function move() {
 	document.getElementById('startbtn').style.display = 'block';
-	var elem = document.getElementById("myBar");
-	var width = 1;
-	var id = setInterval(frame, 90);
+	let elem = document.getElementById("myBar");
+	let width = 1;
+	let id = setInterval(frame, 90);
 
 // Stop the progress bar from moving when it is 100%
 // Spawn Retry button when the progress bar is 100%
@@ -194,8 +201,8 @@ function theDrug() {
 // Create the countdown timer
 function playGame() {
 	document.getElementById('gamestart').style.display = 'block';
-	var seconds = document.getElementById("countdown").textContent;
-	var countdown = setInterval(function(){
+	let seconds = document.getElementById("countdown").textContent;
+	let countdown = setInterval(function(){
 	    seconds--;
 	    document.getElementById("countdown").textContent = seconds;
 	    if (seconds <= 0) {
