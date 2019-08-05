@@ -1,10 +1,3 @@
-const fullNames = names.map(function(name){
-  return `${name} Bos`;
-});
-
-console.log(fullNames); // Wes Bos, Kait Bos, Lux Bos
-
-
 // INTRO STAGE
 //start conversation
 	function btn() {
